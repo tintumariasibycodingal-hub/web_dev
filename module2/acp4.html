@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Ice Cream Shop Menu</title>
+  <style>
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      text-align: center;
+      color: darkgreen;
+    }
+
+
+    
+    h1 {
+      color: darkgreen;
+      font-size: 36px;
+    }
+
+       h1+p {
+        color: white;
+        font-weight: bold;
+        background-color: darkgreen;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    .shop-description::first-letter {
+
+
+      font-size: 36px;
+      color: darkgreen;
+      font-weight: bold;
+    }
+
+    .menu-box {
+
+
+      width: 420px;
+      background-color: white;
+      border: 3px solid darkgreen;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+  ul {
+    padding: 0;
+  }
+
+  ul>li {
+    list-style: none;
+    background-color: white;
+    color: darkgreen;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid darkgreen;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  }
+
+
+  
+    ul>li:nth-child(3) {
+      background-color: darkgreen;
+      color: white;
+      border: 3px solid darkgreen;
+    }
+
+    ul>li:hover {
+      background-color: darkgreen;
+      color: white;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    ul>li:nth-child(3):hover {
+      background-color: white;
+      color: darkgreen;
+    }
+
+    button {
+      background-color: darkgreen;
+      color: white;
+      border: 2px solid darkgreen;
+      border-radius: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    button:hover {
+      background-color: white;
+      color: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Ice Cream Shop Menu</h1>
+  <p>Welcome to Scoops of Joy!</p>
+  <p class="shop-description">
+    We serve colourful, creamy, and delicious ice cream flavours.
+  </p>
+  <div class="menu-box">
+    <h2>Today's Ice Cream Flavours</h2>
+    <ul>
+      <li>Chocolate Delight</li>
+      <li>Strawberry Swirl</li>
+      <li>Mango Magic - Today's Special</li>
+      <li>Vanilla Dream</li>
+      <li>Blueberry Blast</li>
+    </ul>
+    <button>Order Now</button>
+  </div>
+</body>
+
+</html>

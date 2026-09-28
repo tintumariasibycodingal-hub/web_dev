@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Food Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1+p {
+      background: #f0f0f0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: gray;
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    ul>li {
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      padding: 12px 20px;
+      margin: 8px auto;
+      width: 280px;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    ul li:nth-child(3) {
+      background: black;
+      color: white;
+      border-color: black;
+    }
+
+    .desc {
+      color: #555555;
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .desc::first-letter {
+      font-size: 220%;
+      color: black;
+      font-weight: bold;
+      float: left;
+      line-height: 0.8;
+      padding-right: 4px;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 8px;
+      padding: 10px 22px;
+      border: 2px solid black;
+      border-radius: 8px;
+      transition: background 0.2s ease, color 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Food Menu</h1>
+  <p>Pick your favourite dish and dig in!</p>
+
+  <ul>
+    <li>Pizza</li>
+    <li>Burger</li>
+    <li>Tacos — Chef's Special!</li>
+    <li>Noodles</li>
+    <li>Ice Cream</li>
+  </ul>
+
+  <p class="desc">Every dish on this menu is made with love and
+    loads of flavour. Try them all and find your favourite!</p>
+
+  <div class="links">
+    <a href="#">Order Now</a>
+    <a href="#">See More</a>
+  </div>
+</body>
+
+</html>

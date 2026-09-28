@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Zoo Rescue Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      padding: 25px;
+      padding-top: 70px;
+      min-height: 800px;
+    }
+
+    h1,
+    h2 {
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .alert {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: black;
+      color: white;
+      padding: 14px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .animal {
+      background: white;
+      border: 2px solid black;
+      padding: 10px;
+      margin: 8px 0;
+      width: 220px;
+    }
+
+    .moved {
+      position: relative;
+      left: 35px;
+      background: black;
+      color: white;
+    }
+
+    .card {
+      position: relative;
+      background: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 25px;
+      width: 230px;
+      text-align: center;
+    }
+
+    .tag {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: black;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid white;
+    }
+
+    .zone {
+      position: sticky;
+      top: 48px;
+      background: black;
+      color: white;
+      padding: 10px;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    .case {
+      background: white;
+      border: 2px solid black;
+      padding: 10px;
+      margin: 8px 0;
+      width: 230px;
+      border-radius: 8px;
+    }
+
+    code {
+      background: black;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="alert">Zoo Rescue Alert - Emergency team active</div>
+
+  <h1>Zoo Rescue Tracker</h1>
+
+    <h2>Sticky</h2>
+    <div class="zone">Active Cases</div>
+    <div class="case">Tiger - Observation</div>
+    <div class="case">Deer - Released</div>
+
+  <h2>Static</h2>
+  <div class="animal">Lion - Resting zone</div>
+
+  <h2>Relative</h2>
+  <div class="animal moved">Rescued Koala - Safe</div>
+
+  <h2>Absolute</h2>
+  <div class="card">
+    Panda - Medical Check
+    <div class="tag">SAFE</div>
+  </div>
+
+
+
+</body>
+
+</html>
