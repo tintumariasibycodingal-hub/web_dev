@@ -1,0 +1,28 @@
+<h2>Methods and Loops</h2>
+<p>Numbers from 1 to 10</p>
+<p id="numbers"></p>
+<p id="random"></p>
+<p id="day"></p>
+
+<script>
+  var text = "";
+
+  for (var i = 1; i <= 10; i++) {
+    text = text + i + "<br>";
+  }
+
+  document.getElementById("numbers").innerHTML = text;
+
+  var randomNumber = Math.floor(Math.random() * 100);
+
+  document.getElementById("random").innerHTML =
+    "The random number is " + randomNumber;
+
+  
+
+  var dayNumber = new Date().getDay();
+
+  document.getElementById("day").innerHTML =
+    "Today's day number is " + dayNumber;
+
+</script>
